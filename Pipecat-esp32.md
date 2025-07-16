@@ -30,7 +30,7 @@ Tried example : _examples/foundational/07-interruptible.py_ in pipecat repo
 - Better to not hardcode APIs in repo, setup as environment variables.
   - `export DEEPGRAM_API_KEY=PASTE_API_KEY_HERE`
   - `export OPENAI_API_KEY=PASTE_API_KEY_HERE`
-  - `export DEEPGRAM_API_KEY=PASTE_API_KEY_HERE`
+  - `export CARTESIA_API_KEY=PASTE_API_KEY_HERE`
   - If this is tough to do everytime, then create a _setup_api_key.sh_, **most importantly add it to the repo's .gitignore** before commiting, in the repo with the following code:
     - `export DEEPGRAM_API_KEY=PASTE_API_KEY_HERE && export OPENAI_API_KEY=PASTE_API_KEY_HERE && export DEEPGRAM_API_KEY=PASTE_API_KEY_HERE`
     - Then run: `source setup_api_key.sh`.
