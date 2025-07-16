@@ -6,9 +6,11 @@
 
 ## Setup
 - Clone pipecat repo : https://github.com/pipecat-ai/pipecat
+  - `git clone --recursive https://github.com/pipecat-ai/pipecat`
 - Setup esp on system following instructions : https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/linux-macos-setup.html
   - Will setup esp on base/root environment, its okay as esptool must be accessible from everywhere, conda env not required.
 - Clone pipecat esp32 fork : https://github.com/harshaampar/pipecat-esp32.git
+  - `git clone --recursive https://github.com/harshaampar/pipecat-esp32.git`
   - Codebug fixed and pushed in the fork
 - Create a new conda env for easier python management of pipecat examples
   - `brew install --cask miniconda`
