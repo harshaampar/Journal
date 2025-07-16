@@ -24,6 +24,7 @@
 ### Pipecat 
 Tried example : _examples/foundational/07-interruptible.py_ in pipecat repo
 - Install requirements for foundational examples: `cd pipecat/examples/foundational && pip install -r requirements.txt`
+- Must be inside the conda env : `conda activate pipecat`
 - Uses DeepGram, Cartesia and OpenAI for STT, TTS, LLM.
 - Needs all three API keys to be functional.
 - Better to not hardcode APIs in repo, setup as environment variables.
@@ -44,6 +45,7 @@ Tried example : _examples/foundational/07-interruptible.py_ in pipecat repo
 Currently running on _esp32-s3-box_, code for the same has been pushed in the fork of the repo.
 - Make sure required esp tools are setup as mentioned earlier.
 - `cd pipecat-esp32/esp32-s3-box`
+- Must not be in the conda environment, in the terminal it must show `(base)` before any line, if it shows `(pipecat)` then run `conda deactivate`.
 - Setup variables, need to run this everyime a new shell is opened:
   - `source ../../esp/esp-idf/export.sh && export WIFI_SSID="SSID_NAME" && export WIFI_PASSWORD="SSID_PASS" && export PIPECAT_SMALLWEBRTC_URL="http://192.168.x.y/api/offer"`
   - The system where server is running and the esp32 must be in the same network(connected to the same router)
